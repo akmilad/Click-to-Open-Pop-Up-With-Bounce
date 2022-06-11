@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Basic Page Needs =====================================-->
+	<meta charset="utf-8">
+	<!-- Mobile Specific Metas ================================-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Site Title- -->
+	<title>Click to Open Popup Box With Bounc</title>
+	<!-- Style -->
+	<link rel="stylesheet" href="style.css">
+	<!-- Style -->
+
+</head>
+<body>
+<!-- This All Css Code CopyRight Owner is >>Ak Milad<< -->
+
+	<!-- Section Start -->
+	<section class="popUpArea" id="popUpArea">
+		<div class="container" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+			<div class="popUpBox">
+				<h1> Pop Up Box is Open</h1>
+				<p class="designation"> Pop up Box Open is successful</p>
+				<button onclick="closePopup()" type="button"> Close PopUp</button>
+			</div>
+		</div>
+	</section>
+	<button onclick="opnePopup()" type="button" name="button"> Click Me to Open Pop Up Box</button>
+
+	<script type="text/javascript">
+	// PopUp Box
+	var popup = document.getElementById("popUpArea");
+	function opnePopup() {
+			popup.classList.add("openPopup");
+	}
+	function closePopup() {
+			popup.classList.remove("openPopup");
+	}
+	// PopUp Box
+	</script>
+
+</body>
+</html>

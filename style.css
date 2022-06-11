@@ -1,0 +1,84 @@
+/* This All Css Code CopyRight Owner is >>Ak Milad<< */
+body {
+    background: #006e80;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 4px 3px 7px 0px rgba(0, 186, 217, .6) inset;
+    background: #006e80;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* PopUp Area */
+.popUpArea {
+  background-color: rgba(0, 0, 0, .2);
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 999999;
+  display: none;
+}
+
+.popUpArea.openPopup {
+  display: block;
+}
+
+.popUpArea .popUpBox {
+    position: absolute;
+    text-align: center;
+    background-color: #fff;
+    padding: 34px 80px;
+    border-radius: 8px;
+    transition: transform .4s ease-in-out;
+    visibility: hidden;
+}
+.popUpArea .popUpBox h1 {
+    margin: 0;
+    font-weight: 800;
+}
+
+.popUpArea.openPopup .popUpBox {
+  animation: popup .3s ease-in-out 1;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes popup {
+  0% {
+    transform: scale(.2);
+  }
+
+  80% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+    visibility: visible;
+  }
+}
+
+.popUpArea .popUpBox button {
+    background-color: #005866;
+    outline: none;
+    color: var(--white);
+    border: none;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+/* PopUp Area */
